@@ -121,8 +121,5 @@ export class ViewComponent implements OnInit {
   {
     debugger;
     this.pagedItems=this.list.filter((i) => (i.Priority.toString() >= this.PriFrom.toString() && i.Priority.toString() <= pri.toString()));
-  }
-
-
-  
+  }  
 }

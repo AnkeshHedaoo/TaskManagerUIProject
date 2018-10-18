@@ -92,14 +92,14 @@ export class ViewComponent implements OnInit {
   {
     debugger;
     if(ssdate!==undefined)
-    this.pagedItems=this.list.filter(i =>i.SDate.toString().toUpperCase().indexOf(ssdate.toString().toUpperCase()))
+    this.pagedItems=this.list.filter(i =>i.SDate.toString().toUpperCase().startsWith(ssdate.toString().toUpperCase()))
 
   }
 
   SearchByEDate(eedate:Date)
   {
     if(eedate!==undefined &&eedate!=null)
-    this.pagedItems=this.list.filter(i=>i.EDate.toString().toUpperCase().indexOf(eedate.toString().toUpperCase()))
+    this.pagedItems=this.list.filter(i=>i.EDate.toString().toUpperCase().startsWith(eedate.toString().toUpperCase()))
     
   }
 

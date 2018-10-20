@@ -42,4 +42,9 @@ baseUrl:"http://localhost/TaskManager.API/";
     return this.httpclient.put<any>("http://localhost/TaskManager.API/EndTaskById/"+IDs,task);
     
   }
+  Edit(task:Task):Observable<any>
+  {
+    return this.httpclient.put<any>("http://localhost/TaskManager.API/UpdateTaskById/"+task.TaskID,task);
+  }
+
 }

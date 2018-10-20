@@ -9,18 +9,4 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Task Manager';
-  // taskList: Array<Task>=[];
-  //   constructor(private service:SharedService,private router:Router) {
-      
-  //   }
-  // GetList(){
-  //   debugger;
-  //   this.service.GetListTask().subscribe(res=>{
-  //     debugger;
-  //     this.taskList=res;
-  //     this.router.navigateByUrl("view");
-  //   });
-
-  // }
-}
+title = 'Task Manager';}

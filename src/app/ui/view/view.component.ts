@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpModule } from '@angular/http';
 import { Task } from '../../models/task';
 import { SharedService } from '../../services/shared.service';
 import { PagerService } from '../../services/page.service';
-import * as $ from 'jquery';
-import { Console } from '@angular/core/src/console';
 
 @Component({
   selector: 'app-view',
@@ -74,7 +71,7 @@ export class ViewComponent implements OnInit {
 
   }
   Delete(ID:string){
-    this.sharedservice.DeleteTask(ID).subscribe(res=>{
+    this.sharedservice.DeleteTask(ID).subscribe(() => {
       this.GetList();
     })
 
@@ -83,9 +80,9 @@ export class ViewComponent implements OnInit {
   END(ID:string)
   {
     debugger;    
-    this.sharedservice.EndTask(this.item,ID).subscribe(res=>{
-      this.GetList();    
-     });      
+    this.sharedservice.EndTask(this.item,ID).subscribe(() => {
+      this.GetList();
+    });      
   }
 
   SearchBySDate(ssdate:Date)

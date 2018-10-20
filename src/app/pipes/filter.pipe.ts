@@ -1,6 +1,13 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform,NgModule } from '@angular/core';
 import { Task } from '../models/task'; 
 import { DatePipe } from '@angular/common';  
+
+
+@NgModule({
+    imports:        [],
+    declarations:   [],
+    exports:        [],
+})
 
 @Pipe({
   name: 'filter'
@@ -12,9 +19,6 @@ export class FilterPipe implements PipeTransform {
   }
 
 }
-
-
-
 
 @Pipe(
   {

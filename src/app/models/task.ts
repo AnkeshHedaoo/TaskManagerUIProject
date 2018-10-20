@@ -3,9 +3,10 @@ export class Task {
     ParentID?:string;
     TaskName?:string;
     Priority?:number;    
-    SDate?:DateTimeFormat;
-    EDate?:DateTimeFormat;  
+    SDate?:Date;
+    EDate?:Date;  
     PriorityTo?:number;
+    IsTaskEnded?:boolean;
     
     
     

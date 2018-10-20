@@ -4,7 +4,7 @@ import { SharedService } from '../../services/shared.service';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { DateTimeFormatter } from '../../services/DateFormat';
 import { Router, ActivatedRoute } from '@angular/router';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 
 @Component({
   selector: 'app-add',
